@@ -1,3 +1,4 @@
+## Made By AyAzhy
 from types import new_class
 import discord
 from discord.ext import commands
@@ -58,7 +59,7 @@ karnabahar = discord.Embed(colour=0x00b0f4,
 
 karnabahar.set_author(name="Chef",
                  icon_url="https://static.vecteezy.com/system/resources/previews/052/793/073/non_2x/chef-logo-design-vector.jpg")
-
+## Made By AyAzhy
 karnabahar.add_field(name="Malzemeler",
                 value="1 küçük karnabahar\n1 adet yumurta\n3 yemek kaşığı galeta unu\n1 çay kaşığı tuz, karabiber, kimyon\n1 çay bardağı rendelenmiş kaşar\nSıvı yağ (kızartmak için)",
                 inline=True)
@@ -125,7 +126,7 @@ mercimek.add_field(name="Malzemeler",
 mercimek.add_field(name="Yapılış",
                 value="Mercimeği haşlayıp bulgurla karıştırın, demlenmeye bırakın.\nSoğanı kavurup salçayı ekleyin, mercimekle karıştırın.\nBaharatları ekleyip yoğurun ve küçük köfteler yapın.\nÜzerine sarımsaklı yoğurt dökerek servis yapın.",
                 inline=False)
-
+## Made By AyAzhy
 mercimek.set_footer(text="Made By AyAzhy")
 
 tavuk = discord.Embed(colour=0x00b0f4,
@@ -210,9 +211,10 @@ async def algila(ctx):
                     await ctx.send(embed=soganhalka)
             if name.strip() == "Hamburger":
                     await ctx.send(embed=hamburger)
-
+## Made By AyAzhy
             
     else:
         await ctx.send("Komutla Birlikte Resim Gönderin.")
 
 bot.run(token)
+## Made By AyAzhy
