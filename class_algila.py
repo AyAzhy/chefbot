@@ -1,3 +1,4 @@
+## Made By AyAzhy
 from keras.models import load_model  # TensorFlow is required for Keras to work
 from PIL import Image, ImageOps  # Install pillow instead of PIL
 import numpy as np
@@ -32,7 +33,7 @@ def detect_bird(img_path, model_path, labels_path):
 
   # Load the image into the array
   data[0] = normalized_image_array
-
+## Made By AyAzhy
   # Predicts the model
   prediction = model.predict(data)
   index = np.argmax(prediction)
@@ -100,6 +101,7 @@ if __name__ == "__main__":
       "3) Baharatları ekleyip yoğurun ve küçük köfteler yapın.",
       "4) Üzerine sarımsaklı yoğurt dökerek servis yapın."
     )
+    ## Made By AyAzhy
   if name.strip() == "Peynirli ve Ispanaklı Börek":
     print(
       "1) Ispanağı ince doğrayın ve beyaz peynirle karıştırın.",
@@ -139,3 +141,4 @@ if __name__ == "__main__":
         "Üzerine marul, köfte, domates ve soğan ekleyin.",
         "Ketçap ve hardal ekleyip üst ekmeği kapatın."
     )
+## Made By AyAzhy
