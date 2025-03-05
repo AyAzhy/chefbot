@@ -1,3 +1,7 @@
-Basit Bir Yemek Botu
+# Yemek Botu
 
-Credits: Ayaz Kabay
+## Projemin Konusu:
+> Kullanıcıların Attığı Yemekleri Algılayan Bir Discord Botu
+
+## Projemin Türü:
+> Yapay Zeka İçeren Bir Discord Botu
