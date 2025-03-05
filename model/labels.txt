@@ -1,0 +1,10 @@
+0 Tavuklu Kremalı Makarna
+1 Karnabahar Köftesi
+2 Fırında Kaşarlı Mantar
+3 Tavada Pratik Pizza
+4 Çikolatalı Muzlu Krep
+5 Peynirli ve Ispanaklı Börek
+6 Yoğurtlu Mercimek Köftesi
+7 Fırında Sebzeli Tavuk
+8 Çıtır Soğan Halkaları
+9 Hamburger
