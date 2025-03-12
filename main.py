@@ -11,7 +11,7 @@ from embedler import *
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='!', intents=intents)
+bot = commands.Bot(command_prefix='.', intents=intents)
 
 @bot.event
 async def on_ready():
@@ -26,7 +26,7 @@ async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 
 @bot.command()
-async def algila(ctx):
+async def algıla(ctx):
     if ctx.message.attachments:
         for attachment in ctx.message.attachments:
             file_name = attachment.filename
@@ -61,5 +61,34 @@ async def algila(ctx):
 @bot.command()
 async def yemekler(ctx):
       await ctx.send(embed=yemekler_embed)
+
+@bot.command()
+async def yardım(ctx):
+      await ctx.send(embed=yardim)
+
+@bot.command()
+async def tarif(ctx, name):
+      await ctx.send(".yemekler Komutundaki Yemeklerin Başındaki Sayıları Kullanın.")
+      if name.strip() == "1":
+                  await ctx.send(embed=pizza_embed)
+      if name.strip() == "2":
+                  await ctx.send(embed=makarna_embed)
+      if name.strip() == "3":
+                  await ctx.send(embed=karnabahar)
+      if name.strip() == "4":
+                    await ctx.send(embed=mantar)
+      if name.strip() == "5":
+                    await ctx.send(embed=cukulata)
+      if name.strip() == "6":
+                    await ctx.send(embed=borek)
+      if name.strip() == "7":
+                    await ctx.send(embed=mercimek)
+      if name.strip() == "8":
+                    await ctx.send(embed=tavuk)
+      if name.strip() == "9":
+                    await ctx.send(embed=soganhalka)
+      if name.strip() == "10":
+                    await ctx.send(embed=hamburger)
+      
 
 bot.run(token)
