@@ -165,7 +165,7 @@ yemekler_embed.set_author(name="Chef",
                  icon_url="https://i.ibb.co/qFsSVyxP/chef-logo-design-vector.jpg")
 
 yemekler_embed.add_field(name="Yemeklerin Listesi",
-                value="Tavuklu Kremalı Makarna\nKarnabahar Köftesi\nFırında Kaşarlı Mantar\nTavada Pratik Pizza\nÇikolatalı Muzlu Krep\nPeynirli ve Ispanaklı Börek\nYoğurtlu Mercimek Köftesi\nFırında Sebzeli Tavuk\nÇıtır Soğan Halkaları\nHamburger",
+                value="1 Tavuklu Kremalı Makarna\n2 Karnabahar Köftesi\n3 Fırında Kaşarlı Mantar\n4 Tavada Pratik Pizza\n5 Çikolatalı Muzlu Krep\n6 Peynirli ve Ispanaklı Börek\n7 Yoğurtlu Mercimek Köftesi\n8 Fırında Sebzeli Tavuk\n9 Çıtır Soğan Halkaları\n10 Hamburger",
                 inline=True)
 yemekler_embed.add_field(name="--------------------------------",
                 value="",
@@ -175,3 +175,14 @@ yemekler_embed.add_field(name="Tarifler İçin",
                 inline=False)
 
 yemekler_embed.set_footer(text="Made By AyAzhy")
+
+yardim = discord.Embed(timestamp=datetime.now())
+
+yardim.set_author(name="Chef",
+                 icon_url="https://i.ibb.co/qFsSVyxP/chef-logo-design-vector.jpg")
+
+yardim.add_field(name="Komutlar",
+                value=".yardım\n.algıla\n.yemekler",
+                inline=False)
+
+yardim.set_footer(text="Made By AyAzhy")
