@@ -16,6 +16,7 @@ bot = commands.Bot(command_prefix='.', intents=intents)
 @bot.event
 async def on_ready():
     print(f'We have logged in as {bot.user}')
+    await bot.change_presence(activity=discord.Game(name=".yardım | Yemek Tarifi"))
 
 @bot.command()
 async def hello(ctx):
@@ -68,27 +69,27 @@ async def yardım(ctx):
 
 @bot.command()
 async def tarif(ctx, name):
-      await ctx.send(".yemekler Komutundaki Yemeklerin Başındaki Sayıları Kullanın.")
-      if name.strip() == "1":
-                  await ctx.send(embed=pizza_embed)
-      if name.strip() == "2":
-                  await ctx.send(embed=makarna_embed)
-      if name.strip() == "3":
-                  await ctx.send(embed=karnabahar)
-      if name.strip() == "4":
-                    await ctx.send(embed=mantar)
-      if name.strip() == "5":
-                    await ctx.send(embed=cukulata)
-      if name.strip() == "6":
-                    await ctx.send(embed=borek)
-      if name.strip() == "7":
-                    await ctx.send(embed=mercimek)
-      if name.strip() == "8":
-                    await ctx.send(embed=tavuk)
-      if name.strip() == "9":
-                    await ctx.send(embed=soganhalka)
-      if name.strip() == "10":
-                    await ctx.send(embed=hamburger)
-      
+        if name.strip() == "1":
+                        await ctx.send(embed=pizza_embed)
+        if name.strip() == "2":
+                        await ctx.send(embed=makarna_embed)
+        if name.strip() == "3":
+                        await ctx.send(embed=karnabahar)
+        if name.strip() == "4":
+                        await ctx.send(embed=mantar)
+        if name.strip() == "5":
+                        await ctx.send(embed=cukulata)
+        if name.strip() == "6":
+                        await ctx.send(embed=borek)
+        if name.strip() == "7":
+                        await ctx.send(embed=mercimek)
+        if name.strip() == "8":
+                        await ctx.send(embed=tavuk)
+        if name.strip() == "9":
+                        await ctx.send(embed=soganhalka)
+        if name.strip() == "10":
+                        await ctx.send(embed=hamburger)
+        elif name.strip() > "10":
+                await ctx.send(".yemekler Komutundaki Yemeklerin Başındaki Sayıları Kullanın.")
 
 bot.run(token)
