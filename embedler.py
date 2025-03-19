@@ -21,6 +21,8 @@ pizza_embed.add_field(name="Yapılış",
 
 pizza_embed.set_footer(text="Made By AyAzhy")
 
+pizza_embed.set_image(url="https://d17wu0fn6x6rgz.cloudfront.net/img/w/tarif/mgt/pizza_14_11zon.webp")
+
 makarna_embed = discord.Embed(colour=0x00b0f4,
                       timestamp=datetime.now())
 
@@ -35,6 +37,8 @@ makarna_embed.add_field(name="Yapılış",
                 inline=False)
 
 makarna_embed.set_footer(text="Made By AyAzhy")
+
+pizza_embed.set_image(url="https://www.bereketlisofralar.com/wp-content/uploads/2018/10/2018-15-10-00-31-40-wtr-kllnln-krml-tvkl-makarna.jpeg")
 
 karnabahar = discord.Embed(colour=0x00b0f4,
                       timestamp=datetime.now())
@@ -147,7 +151,7 @@ hamburger = discord.Embed(colour=0x00b0f4,
 hamburger.set_author(name="Chef",
                  icon_url="https://i.ibb.co/qFsSVyxP/chef-logo-design-vector.jpg")
 
-hamburger.add_field(name="Köfte İçin",
+hamburger.add_field(name="Hamburger Köftesi İçin Malzemeler",
                 value="400 gr dana kıyma\n1 diş sarımsak (rendelenmiş)\n1 çay kaşığı tuz\n1 çay kaşığı karabiber\n1 çay kaşığı kimyon\n1 yemek kaşığı zeytinyağı",
                 inline=True)
 hamburger.add_field(name="Diğer Malzemeler:",
@@ -171,7 +175,7 @@ yemekler_embed.add_field(name="--------------------------------",
                 value="",
                 inline=False)
 yemekler_embed.add_field(name="Tarifler İçin",
-                value="!tarif yemeğin_adı",
+                value=".tarif yemeğin_numarası",
                 inline=False)
 
 yemekler_embed.set_footer(text="Made By AyAzhy")
@@ -182,7 +186,7 @@ yardim.set_author(name="Chef",
                  icon_url="https://i.ibb.co/qFsSVyxP/chef-logo-design-vector.jpg")
 
 yardim.add_field(name="Komutlar",
-                value=".yardım\n.algıla\n.yemekler",
+                value=".yardım\n.algıla\n.yemekler\n.tarif",
                 inline=False)
 
 yardim.set_footer(text="Made By AyAzhy")
